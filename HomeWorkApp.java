@@ -8,7 +8,7 @@ public class HomeWorkApp {
         negativePositive();
         trueFalse();
         method9();
-        year();
+        year(2020);
     }
 
     static void printThreeWords() {
@@ -32,11 +32,9 @@ public class HomeWorkApp {
         int value = 79;
         if (value <= 0) {
             System.out.println("Красный");
-        }
-        if (value <= 100 && value >= 0) {
+        } else if (value <= 100 && value >= 0) {
             System.out.println("Желтый");
-        }
-        if (value > 100) {
+        } else if (value > 100) {
             System.out.println("Зеленый");
         }
     }
@@ -66,8 +64,7 @@ public class HomeWorkApp {
         int a = 100;
         if (a >= 0) {
             System.out.println("positive");
-        }
-        if (a < 0) {
+        } else {
             System.out.println("negative");
         }
     }
@@ -84,16 +81,12 @@ public class HomeWorkApp {
         }
     }
 
-    static void year() {
-        int year = 2015;
-        if (year % 100 == 0 && year % 400 == 0) {
-            System.out.println("Высокосный");
-        } else if (year % 100 == 0) {
+    static void year(int year) {
+        if (year % 100 == 0 && year % 400 == 0 && year % 100 == 0) {
             System.out.println("Высокосный");
         } else {
             System.out.println("Невысокосный");
         }
-
     }
 }
 
