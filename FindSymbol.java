@@ -1,11 +1,10 @@
-public class Find {
+public class FindSymbol {
     public static void main(String[] args) {
-        findSymbolOccurance();
+        findSymbolOccurance("Apple", 'a');
     }
-    public static void findSymbolOccurance(){
-        String s = "Apple";
+
+    public static void findSymbolOccurance(String s, char c) {
         int[] count = new int[3];
-        char c = 'a';
 
         String temp = s.toLowerCase();
         for (int i = 0; i < temp.length(); i++) {
@@ -14,7 +13,6 @@ public class Find {
                 count[c - 'a']++;
             }
         }
-
         for (int i = 0; i < count.length; i++) {
             System.out.println((char) (i + 'a') + ": " + count[i]);
         }

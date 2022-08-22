@@ -6,6 +6,7 @@ public class Game_ {
     public static void main(String[] args) {
         game();
     }
+
     public static void game() {
         Scanner myScanner = new Scanner(System.in);
         String[] words = {"apple", "orange", "lemon",
